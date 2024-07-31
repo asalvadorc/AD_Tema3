@@ -1,0 +1,42 @@
+site_url : https://asalvadorc.github.io/AD_Tema3
+
+site_name: AD - Accés a Dades
+
+extra_css:
+  - css/extra.css
+  
+theme: 
+  name: readthedocs
+  logo: assets/logocaminas.png
+
+nav:
+
+- Accés a Dades:
+  - Tema 3 Fitxers de diferents formats:
+    - Objectius: AD_T3_Fitxers_de_diferents_formats/objectius.md
+    - 1.- Fitxers binaris amb formats específics: AD_T3_Fitxers_de_diferents_formats/1_fitxers_binaris_amb_formats_especfics.md
+    - 2.- Accés directe a fitxers: AD_T3_Fitxers_de_diferents_formats/2_accs_directe_a_fitxers.md
+    - 3.- Seriació d'objectes: AD_T3_Fitxers_de_diferents_formats/3_seriaci_dobjectes.md
+    - 4.- Documents XML: 
+       - AD_T3_Fitxers_de_diferents_formats/4_documents_xml.md 
+       - 4.1 - Parser o analitzador XML: AD_T3_Fitxers_de_diferents_formats/41__parser_o_analitzador_xml.md
+       - 4.2 - L'estructura DOM: 
+         - AD_T3_Fitxers_de_diferents_formats/42__lestructura_dom.md 
+         - 4.2.1 Lectura: AD_T3_Fitxers_de_diferents_formats/421_lectura.md
+         - 4.2.2 Escriptura: AD_T3_Fitxers_de_diferents_formats/422_escriptura.md
+       - 4.3 - Binding: AD_T3_Fitxers_de_diferents_formats/43__binding.md
+    - 5.- Documents JSON: 
+       - AD_T3_Fitxers_de_diferents_formats/5_documents_json.md 
+       - 5.1 - Estructura JSON: AD_T3_Fitxers_de_diferents_formats/51__estructura_json.md
+       - 5.2 Driver org.json: 
+         - AD_T3_Fitxers_de_diferents_formats/52_driver_orgjson.md 
+         - 5.2.1 - Lectura: AD_T3_Fitxers_de_diferents_formats/521__lectura.md
+         - 5.2.2 - Escriptura: AD_T3_Fitxers_de_diferents_formats/522__escriptura.md
+       - 5.3 Driver Moshi: 
+          - AD_T3_Fitxers_de_diferents_formats/53_driver_moshi.md 
+          - 5.3.1 Lectura: AD_T3_Fitxers_de_diferents_formats/531_lectura.md
+          - 5.3.2 Escriptura: AD_T3_Fitxers_de_diferents_formats/532_escriptura.md
+    - Exercicis: AD_T3_Fitxers_de_diferents_formats/exercicis.md
+
+
+  
