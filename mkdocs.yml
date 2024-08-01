@@ -11,8 +11,7 @@ theme:
 
 nav:
 
-- Accés a Dades:
-  - Tema 3 Fitxers de diferents formats:
+- Tema 3 Fitxers de diferents formats:
     - Objectius: AD_T3_Fitxers_de_diferents_formats/objectius.md
     - 1.- Fitxers binaris amb formats específics: AD_T3_Fitxers_de_diferents_formats/1_fitxers_binaris_amb_formats_especfics.md
     - 2.- Accés directe a fitxers: AD_T3_Fitxers_de_diferents_formats/2_accs_directe_a_fitxers.md
