@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/AD_Tema3/AD_T3_Fitxers_de_diferents_formats/42__lestructura_dom/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>42  lestructura dom - AD - Accés a Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "42  lestructura dom";
+        var mkdocs_page_input_path = "AD_T3_Fitxers_de_diferents_formats/42__lestructura_dom.md";
+        var mkdocs_page_url = "/AD_Tema3/AD_T3_Fitxers_de_diferents_formats/42__lestructura_dom/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Fitxers de diferents formats</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius/">Objectius</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_fitxers_binaris_amb_formats_especfics/">1.- Fitxers binaris amb formats específics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_accs_directe_a_fitxers/">2.- Accés directe a fitxers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_seriaci_dobjectes/">3.- Seriació d'objectes</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >4.- Documents XML</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../4_documents_xml/">4 documents xml</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../41__parser_o_analitzador_xml/">4.1 - Parser o analitzador XML</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >4.2 - L'estructura DOM</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">42  lestructura dom</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../421_lectura/">4.2.1 Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../422_escriptura/">4.2.2 Escriptura</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../43__binding/">4.3 - Binding</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >5.- Documents JSON</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../5_documents_json/">5 documents json</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../51__estructura_json/">5.1 - Estructura JSON</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >5.2 Driver org.json</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../52_driver_orgjson/">52 driver orgjson</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../521__lectura/">5.2.1 - Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../522__escriptura/">5.2.2 - Escriptura</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >5.3 Driver Moshi</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../53_driver_moshi/">53 driver moshi</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../531_lectura/">5.3.1 Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../532_escriptura/">5.3.2 Escriptura</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">AD - Accés a Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Fitxers de diferents formats</li>
+          <li class="breadcrumb-item">4.- Documents XML</li>
+          <li class="breadcrumb-item">4.2 - L'estructura DOM</li>
+      <li class="breadcrumb-item active">42  lestructura dom</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Accés a Dades</p>
+<h1 id="42-lestructura-dom">4.2 - L'estructura DOM</h1>
+<p>L’estructura DOM pren la forma d’un arbre, on cada part del XML es trobarà
+representada en forma de <strong>node</strong>. En funció de la posició en el document XML,
+parlarem de diferents tipus de nodes:</p>
+<ul>
+<li>El node principal que representa tot el XML sencer s’anomena <strong>Document.</strong></li>
+<li>Les diverses etiquetes, inclosa l’etiqueta arrel, es coneixen com a nodes <strong>Element</strong>.</li>
+<li>El contingut d’una etiqueta de tipus text, serà un node de tipus <strong>TextElement</strong></li>
+<li>Els atributs seran nodes de tipus <strong>Attribute</strong>.</li>
+</ul>
+<p>En l'exemple de la pàgina anterior, el fitxer <strong>cotxes.xml</strong> , que té aquesta
+estructura:</p>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<p><oferta></p>
+<p><vehiculo></p>
+<p><marca>ford</marca></p>
+<p><modelo color="gris">focus</modelo></p>
+<p><motor combustible="gasolina">duratorc 1.4</motor></p>
+<p><matricula>1234AAA</matricula></p>
+<p><kilometros>12500</kilometros></p>
+<p><precio_inicial>12000</precio_inicial></p>
+<p><precio_oferta>10000</precio_oferta></p>
+<p><extra valor="250">pintura metalizada</extra></p>
+<p><extra valor="300">llantas</extra></p>
+<p><foto>11325.jpg</foto></p>
+<p><foto>11326.jpg</foto></p>
+<p></vehiculo></p>
+<p><vehiculo></p>
+<p><marca>ford</marca></p>
+<p><modelo color="gris">focus</modelo></p>
+<p><motor combustible="diesel">duratorc 2.0</motor></p>
+<p><matricula>1235AAA</matricula></p>
+<p><kilometros>125000</kilometros></p>
+<p><precio_inicial>10000</precio_inicial></p>
+<p><precio_oferta>9000</precio_oferta></p>
+<p><extra valor="250">pintura metalizada</extra></p>
+<p><extra valor="200">spoiler trasero</extra></p>
+<p><extra valor="500">climatizador</extra></p>
+<p><foto>11327.jpg</foto></p>
+<p><foto>11328.jpg</foto></p>
+<p></vehiculo></p>
+<p></oferta></p>
+<p>Veient-lo com una estructura jeràrquica ens quedaria així:</p>
+<p><img alt="" src="../T3_4_2_1.png" /></p>
+<p>On:</p>
+<ul>
+<li>El node <strong>Document</strong> és el rombe</li>
+<li>Els nodes <strong>Element</strong> són els cercles</li>
+<li>Els nodes <strong>TextElement</strong> són els rectàngles de fons taronja.</li>
+<li>Els nodes <strong>Attribute</strong> són els rectàngles arrodonits de color groc</li>
+</ul>
+<p>Cada node específic disposa de mètodes per accedir a les seues dades concretes
+(nom, valor, nodes fills, node pare, etc.). És a dir, que el <strong>node</strong> serveix
+per a situar-se en una determinada posició (element, atribut, element de text,
+...). Tindrà uns mètodes, sobretot per a navegar, encara que també alguns per
+a traure el contingut. <strong>Element</strong> és un classe derivada de <strong>Node</strong> (per tant
+hereta tots els seus mètodes), i proporciona algunes coses més, sobretot per a
+accedir còmodament a les seues parts. Mirem els mètodes més importants, tant
+de<strong>Node</strong> com de <strong>Element</strong> i <strong>Document</strong></p>
+<p><strong>Mètodes de NODE</strong></p>
+<table>
+<thead>
+<tr>
+<th>Valor tornat</th>
+<th>Mètode</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td><strong>getNodeName()</strong></td>
+<td>torna el nom d'aquest node</td>
+</tr>
+<tr>
+<td>short</td>
+<td><strong>getNodeType()</strong></td>
+<td>torna el tipus d'aquest node (ELEMENT_NODE, ATTRIBUTE_NODE, TEXT_NODE, ...</td>
+</tr>
+<tr>
+<td>String</td>
+<td><strong>getNodeValue()</strong></td>
+<td>torna el valor del node, si en té</td>
+</tr>
+<tr>
+<td>NodeList</td>
+<td><strong>getChildNodes()</strong></td>
+<td>torna una llista amb els nodes fills</td>
+</tr>
+<tr>
+<td>Node</td>
+<td><strong>getFirstChild()</strong></td>
+<td>torna el primer fill</td>
+</tr>
+<tr>
+<td>Node</td>
+<td><strong>getLastChild()</strong></td>
+<td>torna l'últim fill</td>
+</tr>
+<tr>
+<td>NamedNodeMap</td>
+<td><strong>getAttributes()</strong></td>
+<td>torna una llista amb els atributs del node (null si no en té cap)</td>
+</tr>
+<tr>
+<td>Node</td>
+<td><strong>getParentNode()</strong></td>
+<td>torna el pare</td>
+</tr>
+<tr>
+<td>String</td>
+<td><strong>getTextContent()</strong></td>
+<td>torna el text contingut en l'element i el de tots els seus descendents, si en té</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><strong>hasChildNodes()</strong></td>
+<td>torna cert si el node té algun fill</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><strong>hasAttributes()</strong></td>
+<td>torna cert si el node té algun atribut</td>
+</tr>
+</tbody>
+</table>
+<p>Mètodes d' <strong>ELEMENT</strong></p>
+<table>
+<thead>
+<tr>
+<th>Valor tornat</th>
+<th>Mètode</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td><strong>getAttribute(</strong> String nom<strong>)</strong></td>
+<td>torna el valor de l'atribut que té aquest nom</td>
+</tr>
+<tr>
+<td>NodeList</td>
+<td><strong>getElementsByTagName(</strong> String nom<strong>)</strong></td>
+<td>torna una llista de nodes amb tots els descendents que tenen aquest nom</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><strong>hasAttribute(</strong> String nom<strong>)</strong></td>
+<td>torna cert si l'element té aquest atribut</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mètodes de DOCUMENT</strong></p>
+<table>
+<thead>
+<tr>
+<th>Valor tornat</th>
+<th>Mètode</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Element</td>
+<td><strong>getDocumentElement()</strong></td>
+<td>torna l'element arrel del document</td>
+</tr>
+<tr>
+<td>NodeList</td>
+<td><strong>getElementsByTagName(</strong> String nom<strong>)</strong></td>
+<td>torna una llista de nodes amb tots els descendents que tenen aquest nom</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Nota</em></strong></p>
+<p>Kotlin ens "suggerirà" canviar molts dels mètodes anteriors per propietats.
+Per exemple per al mètode <strong>getNodeName()</strong> ens suggerirà de canviar-lo per la
+propietat <strong>nodeName</strong>. Podeu substituir per la propietat o deixar el mètode,
+el que vulgueu.</p>
+<p>Sempre que tinguem una<strong>llista de nodes</strong> , podrem accedir a cadascun dels
+membres de la llista amb el mètode <strong>item</strong> especificant el número d'ordre.
+Així, si volem accedir al primer posarem <strong>item(0)</strong></p>
+<p>Posterioment posarem els mètodes que serveixen per anar posant contingut a un
+document: crear fills, crear atributs, posar contingut, ...</p>
+<p>El DOM resultant obtingut des d’un XML acaba sent un còpia exacta del fitxer,
+però disposat de diferent manera. Tant al XML com al DOM hi haurà informació
+no visible, com ara els <em>retorns de carro</em> , que cal tenir en compte per tal
+de saber processar correctament el contingut i evitar sorpreses poc
+comprensibles.</p>
+<p>Per a il·lustrar el problema que poden suposar els retorn de carro, imaginem
+que disposem d’un document XML amb el següent contingut:</p>
+<table>
+
+<tr>
+
+<td> </td>
+
+<td> </td>
+
+</tr>
+
+</table>
+
+<p>Veurem més clar si representem els retorn de carro en el mateix document:</p>
+<table>¶
+
+<tr>¶
+
+<td> </td>¶
+
+<td> </td>¶
+
+</tr>¶
+
+</table>
+
+<p>A la següent figura es mostra la representació que tindria l’objecte DOM, un
+vegada estiga ja copiat en memòria. Observeu com l’element ** <em>table</em><strong> tindrà
+tres fills. En un es guardarà el </strong>retorn de carro<strong> que situa l’etiqueta </strong><em>&lt;
+tr&gt; </em><strong>a la següent línia, en el segon trobarem l’etiqueta </strong><em>&lt; tr&gt;</em><strong>, i en
+el tercer el retorn de carro que fa que </strong>&lt; /table&gt;<strong> estiga en la línia de
+baix. El mateix passa amb els fills de </strong><em>&lt; tr&gt;</em><strong>, abans i després de cada
+node </strong><em>&lt; td&gt;</em><strong> trobarem un </strong>retorn de carro**.</p>
+<p><img alt="" src="../T3_4_2_1.png" /></p>
+<p>En canvi, si haguérem partit d'un XML equivalent però sense retorns de carro,
+el resultat hauria estat diferent:</p>
+<table><tr><td></td><td></td></tr></table>
+
+<p><img alt="" src="../T3_4_2_2.png" /></p>
+<p>L’absència de retorns de carro en el fitxer implica també l’absència de nodes
+contenint els retorns de carro en l’estructura DOM.</p>
+<p>Un altre aspecte a tenir en compte és que el contingut de les etiquetes es
+plasma en el DOM com un node fill de l’etiqueta contenidora. És a dir, per
+obtenir el text d’una etiqueta cal obtenir el primer fill d’aquesta.</p>
+<p><aaa></p>
+<p><bbb></p>
+<p>text de l'etiqueta bbb</p>
+<p></bbb></p>
+<p></aaa></p>
+<p><img alt="" src="../T3_4_2_3.png" /></p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 2.5</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../41__parser_o_analitzador_xml/" class="btn btn-neutral float-left" title="4.1 - Parser o analitzador XML"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../421_lectura/" class="btn btn-neutral float-right" title="4.2.1 Lectura">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../41__parser_o_analitzador_xml/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../421_lectura/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/AD_Tema3/AD_T3_Fitxers_de_diferents_formats/1_fitxers_binaris_amb_formats_especfics/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>1.- Fitxers binaris amb formats específics - AD - Accés a Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "1.- Fitxers binaris amb formats espec\u00edfics";
+        var mkdocs_page_input_path = "AD_T3_Fitxers_de_diferents_formats/1_fitxers_binaris_amb_formats_especfics.md";
+        var mkdocs_page_url = "/AD_Tema3/AD_T3_Fitxers_de_diferents_formats/1_fitxers_binaris_amb_formats_especfics/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Fitxers de diferents formats</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius/">Objectius</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1.- Fitxers binaris amb formats específics</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_accs_directe_a_fitxers/">2.- Accés directe a fitxers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_seriaci_dobjectes/">3.- Seriació d'objectes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >4.- Documents XML</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../4_documents_xml/">4 documents xml</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../41__parser_o_analitzador_xml/">4.1 - Parser o analitzador XML</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >4.2 - L'estructura DOM</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../42__lestructura_dom/">42  lestructura dom</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../421_lectura/">4.2.1 Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../422_escriptura/">4.2.2 Escriptura</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../43__binding/">4.3 - Binding</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >5.- Documents JSON</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../5_documents_json/">5 documents json</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../51__estructura_json/">5.1 - Estructura JSON</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >5.2 Driver org.json</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../52_driver_orgjson/">52 driver orgjson</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../521__lectura/">5.2.1 - Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../522__escriptura/">5.2.2 - Escriptura</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >5.3 Driver Moshi</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../53_driver_moshi/">53 driver moshi</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../531_lectura/">5.3.1 Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../532_escriptura/">5.3.2 Escriptura</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">AD - Accés a Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Fitxers de diferents formats</li>
+      <li class="breadcrumb-item active">1.- Fitxers binaris amb formats específics</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Accés a Dades</p>
+<h1 id="1-fitxers-binaris-amb-formats-especifics">1.- Fitxers binaris amb formats específics</h1>
+<p>DataInputStream i DataOutputStream</p>
+<p>Ja hem vist com utilitzar els fitxers de caràcters i també de bytes. Però en
+aquest últim cas sempre ha estat per a llegir o escriure byte a byte, fins al
+final de fitxer.</p>
+<p>Ens plantegem ara com utilitzar els fitxer per a guardar dades estructurades
+de tipus bàsics <strong>diferents</strong>. De moment no seran complicades però enseguida
+veurem que ens fa falta alguna cosa per a poder treballar còmodament.</p>
+<p>Suposem un exemple d'una empresa que vol guardar dades dels seus empleats.
+Concretament vol guardar el número d'empleat, el nom, el departament al qual
+pertany, l'edat i el sou.</p>
+<p><strong>Número</strong> | <strong>Nom</strong> | <strong>Depart<br />
+</strong> | <strong>Edat<br />
+</strong> | <strong>Sou<br />
+</strong><br />
+---|---|---|---|---<br />
+1 | Andreu | 10 | 32 | 1000.00<br />
+2 | Bernat | 20 | 28 | 1200.00<br />
+3 | Claudia | 10 | 26 | 1100.00<br />
+4 | Damià | 10 | 40 | 1500.00  </p>
+<p>Ja es veu que les dades són de difrents tipus. Si tot fóra de text no hi
+hauria problema. Però si considerem les dades com a numèriques enteres o reals
+no ens serveixen els Stream de caràcters (Reader i Writer). Per tant hem
+d'anar a InputStream i OutputStream, però seria molt dur treballar directament
+amb bytes. Hauríem de saber exactament quants bytes ocupa cada dada: <strong>int</strong>
+utilitza 4 bytes; <strong>short</strong> utilitza 2 bytes, <strong>byte</strong> utilitza 1 byte, i
+<strong>long</strong> utilitza 8 bytes; en el cas dels reals, <strong>float</strong> utilitza 4 bytes i
+<strong>double</strong> utilitza 8 bytes. Massa varietat i massa fiena recordar-los tots.
+Ens falta doncs una ajuda per a poder guardar i recuperar dades d'aquestos
+diferents tipus.</p>
+<p>Aquesta funcionalitat ens la proporciona la parella <strong>DataInputStream</strong> i
+<strong>DataOutputStream</strong> , que són decoradors dels Stream i que disposen de
+mètodes per a guardar o recuperar dades de diferents tipus, sense haver de
+saber el format intern de cadascun ni quants bytes ocupen. En la següent taula
+tenim uns quants mètodes d'aquestos:</p>
+<table>
+<thead>
+<tr>
+<th><strong>DataInputStream</strong></th>
+<th>Explicació</th>
+<th><strong>DataOutputStream</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte <strong>readByte</strong>()</td>
+<td>Un byte</td>
+<td>void <strong>writeByte</strong>(int)</td>
+</tr>
+<tr>
+<td>short <strong>readShort</strong>()</td>
+<td>Un enter xicotet (2 bytes)</td>
+<td>void <strong>writeShort</strong>(short)</td>
+</tr>
+<tr>
+<td>int <strong>readInt</strong>()</td>
+<td>Un enter (4 bytes)</td>
+<td>void <strong>writeInt</strong>(int)</td>
+</tr>
+<tr>
+<td>long <strong>readLong</strong>()</td>
+<td>Un enter llarg (8 bytes)</td>
+<td>void <strong>writeLong</strong>(long)</td>
+</tr>
+<tr>
+<td>float <strong>readFloat</strong>()</td>
+<td>Un real en simple precisió</td>
+<td>void <strong>writeFloat</strong>(flaot)</td>
+</tr>
+<tr>
+<td>double <strong>readDouble</strong>()</td>
+<td>Un real en doble precisió</td>
+<td>void <strong>writeDouble</strong>(double)</td>
+</tr>
+<tr>
+<td>char <strong>readChar</strong>()</td>
+<td>Un caràcter Unicode (16 bits)</td>
+<td>void <strong>writeChar</strong>(int)</td>
+</tr>
+<tr>
+<td>String <strong>readUTF</strong>()</td>
+<td>Una cadena de caràcters UTF-8 i la converteix en String (16 bits)</td>
+<td>void <strong>writeUTF</strong>(String)</td>
+</tr>
+</tbody>
+</table>
+<p>Anem a veure l'exemple, en el qual guardarem en un fitxer anomenat
+<strong>Empleats.dat</strong> les dades dels 4 empleats. Per comoditat ens els definirem en
+arrays de 4 elements: un array per als noms, un altre per als departaments,
+etc. Enganxeu el següent codi en un fitxer de Kotlin anomenat
+<strong>Exemple_3_1_1_CrearEmpleats.kt</strong></p>
+<pre><code>package exemples
+
+import java.io.DataOutputStream
+import java.io.FileOutputStream
+
+fun main(args: Array&lt;String&gt;) {
+    val f = DataOutputStream(FileOutputStream("Empleats.dat"))
+
+    val noms = arrayOf("Andreu", "Bernat", "Clàudia", "Damià")
+    val departaments = arrayOf( 10, 20, 10, 10 )
+    val edats = arrayOf( 32, 28, 26, 40 )
+    val sous = arrayOf( 1000.0, 1200.0, 1100.0, 1500.0 )
+
+    for (i in 0..3){
+        f.writeInt(i + 1)
+        f.writeUTF(noms[i])
+        f.writeInt(departaments[i])
+        f.writeInt(edats[i])
+        f.writeDouble(sous[i])
+    }
+    f.close()
+    println("Fitxer creat")
+}
+</code></pre>
+<p>I aquesta seria la recuperació de les dades. Enganxeu el següent codi en un
+fitxer de Kotlin anomenat <strong>Exemple_3_1_2_ConsultarEmpleats.kt</strong></p>
+<pre><code>package exemples
+
+import java.io.FileInputStream
+import java.io.DataInputStream
+
+fun main(args: Array&lt;String&gt;) {
+    val f = DataInputStream(FileInputStream("Empleats.dat"))
+
+    while (f.available() &gt; 0) {
+        System.out.println("Número: " + f.readInt())
+        System.out.println("Nom: " + f.readUTF())
+        System.out.println("Depart: " + f.readInt())
+        System.out.println("Edat: " + f.readInt())
+        System.out.println("Sou: " + f.readDouble())
+        System.out.println()
+    }
+    f.close()
+}
+</code></pre>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 2.5</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../objectius/" class="btn btn-neutral float-left" title="Objectius"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2_accs_directe_a_fitxers/" class="btn btn-neutral float-right" title="2.- Accés directe a fitxers">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../objectius/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2_accs_directe_a_fitxers/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

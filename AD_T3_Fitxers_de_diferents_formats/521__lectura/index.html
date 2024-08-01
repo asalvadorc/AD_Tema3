@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/AD_Tema3/AD_T3_Fitxers_de_diferents_formats/521__lectura/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>5.2.1 - Lectura - AD - Accés a Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "5.2.1 - Lectura";
+        var mkdocs_page_input_path = "AD_T3_Fitxers_de_diferents_formats/521__lectura.md";
+        var mkdocs_page_url = "/AD_Tema3/AD_T3_Fitxers_de_diferents_formats/521__lectura/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Fitxers de diferents formats</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius/">Objectius</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_fitxers_binaris_amb_formats_especfics/">1.- Fitxers binaris amb formats específics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_accs_directe_a_fitxers/">2.- Accés directe a fitxers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_seriaci_dobjectes/">3.- Seriació d'objectes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >4.- Documents XML</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../4_documents_xml/">4 documents xml</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../41__parser_o_analitzador_xml/">4.1 - Parser o analitzador XML</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >4.2 - L'estructura DOM</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../42__lestructura_dom/">42  lestructura dom</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../421_lectura/">4.2.1 Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../422_escriptura/">4.2.2 Escriptura</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../43__binding/">4.3 - Binding</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >5.- Documents JSON</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../5_documents_json/">5 documents json</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../51__estructura_json/">5.1 - Estructura JSON</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >5.2 Driver org.json</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../52_driver_orgjson/">52 driver orgjson</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">5.2.1 - Lectura</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../522__escriptura/">5.2.2 - Escriptura</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >5.3 Driver Moshi</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../53_driver_moshi/">53 driver moshi</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../531_lectura/">5.3.1 Lectura</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../532_escriptura/">5.3.2 Escriptura</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exercicis/">Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">AD - Accés a Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Fitxers de diferents formats</li>
+          <li class="breadcrumb-item">5.- Documents JSON</li>
+          <li class="breadcrumb-item">5.2 Driver org.json</li>
+      <li class="breadcrumb-item active">5.2.1 - Lectura</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Accés a Dades</p>
+<h1 id="521-lectura">5.2.1 - Lectura</h1>
+<p>JSONTokener</p>
+<p>El primer que haurem de fer serà analitzar el document per a obtenir l'element
+arrel (que com hem vist normalment serà un objecte, però de vegades pot ser un
+array).</p>
+<p>El constructor de <strong>JSONTokener</strong> admet un <strong>String</strong> , amb la qual cosa
+analitzarem una cadena que posem directament, o també un <strong>InputStream</strong> o un
+<strong>Reader</strong> , amb la qual cosa podrem analitzar directament el contingut d'un
+fitxer</p>
+<p>El mètode <strong>nextValue()</strong> de <strong>JSONTokener</strong> tornarà l'arrel del document
+Json, i només haurem de fer un cast a l'ojecte que és l'arrel: un
+<strong>JSONObject</strong> o un <strong>JSONArray</strong></p>
+<p>En el següent exemple agafem el json directament d'un <strong>string</strong> , on teníem
+els números parells.</p>
+<p>{ "p1" : 2 , "p2" : 4 , "p3" : 6 , "p4" : 8 , "p5" : 10 }</p>
+<p>Observeu com per a la definició del String ens ha tocat escapar les dobles
+cometes. Copieu el següent codi en el fitxer
+Kotlin<strong>Exemple_3_5_11_JSONAnalitzarCadena.kt</strong></p>
+<pre><code>package exemples
+
+import org.json.JSONTokener
+import org.json.JSONObject
+
+fun main(args: Array&lt;String&gt;) {
+
+    val cadena = "{ \"p1\" : 2 , \"p2\" : 4 , \"p3\" : 6 , \"p4\" : 8 , \"p5\" : 10 }"
+
+    val arrel = JSONTokener(cadena).nextValue() as JSONObject
+
+    println(arrel.get("p1"))
+}
+</code></pre>
+<p>Mentre que en aquest exemple accedim al fitxer <strong>parelles.json</strong> (que
+assumirem que té el mateix contingut). Podríem passar el contingut del fitxer
+a una cadena, però és molt més còmode passar el <strong>Reader</strong> com paràmetre en el
+constructor, i ell s'encarrega de llegir-lo tot. Copieu el següent codi en el
+fitxer <strong>Exemple_3_5_12_JSONAnalitzarFitxer.kt</strong> :</p>
+<pre><code>package exemples
+
+import org.json.JSONTokener
+import org.json.JSONObject
+import java.io.FileReader
+
+fun main(args: Array&lt;String&gt;) {
+
+    val r_json = FileReader("parelles.json")
+
+    val arrel = JSONTokener(r_json).nextValue() as JSONObject
+
+    println(arrel.get("p3"));
+}
+</code></pre>
+<p>JSONObject</p>
+<p>Contindrà un <strong>objecte json</strong>. Recordeu que l'<strong>objecte</strong> es delimita amb les
+claus: <strong>{ }</strong></p>
+<p>El mètode més important serà <strong>get(<em>clau</em>)</strong> al qual li passem la clau del
+membre que volem obtenir. Si el membre és una parella clau-valor, obtindrem
+directament el valor. Si és un altre objecte, doncs obtindrem l'objecte o
+també podria ser un array. El cas que siga una parella clau-valor, ja l'hem
+vist en l'exemple anterior.</p>
+<p>En el següent exemple, en el fitxer <strong>Empleat.json</strong> tindrem un empleat</p>
+<p>{ "empleat" :<br />
+{ "num": 1 ,<br />
+"nom": "Andreu" ,<br />
+"departament": 10 ,<br />
+"edat": 32 ,<br />
+"sou": 1000.0<br />
+}<br />
+}</p>
+<p>Observeu com ara de l'element arrel hem d'agafar <strong>empleat</strong> , que és un
+objecte amb les parelles clau-valor <strong>num</strong> , <strong>nom</strong> , ....</p>
+<p>Copieu el segúent codi en el fitxer Kotlin
+<strong>Exemple_3_5_13_JSONAnalitzarEmpleat.kt</strong> :</p>
+<pre><code>package exemples
+
+import org.json.JSONTokener
+import org.json.JSONObject
+import java.io.FileReader
+
+fun main(args: Array&lt;String&gt;) {
+
+    val r_json = FileReader("Empleat.json")
+
+    val arrel = JSONTokener(r_json).nextValue() as JSONObject
+
+    val empleat = arrel.get("empleat") as JSONObject
+
+    println("" + empleat.get("nom") + " (" + empleat.get("sou") + ")")
+}
+</code></pre>
+<p>També podem utilitzar els mètodes <strong>getJSONObject()</strong> , <strong>getJSONArray</strong> ,
+<strong>getInt()</strong> , <strong>getString()</strong> , ..., que directament ens ho dóna en el tipus
+especificat, i no cal fer cast.</p>
+<p>JSONArray</p>
+<p>Serà l'array, que recordem que ve limitat per els claudàtors: <strong>[ ]</strong></p>
+<p>Per a obtenir els elements de l'array utilitzarem el mètode <strong>get(<em>index</em>)</strong>,
+on l'índex és el<strong>número d'ordre</strong> de l'element que volem obtenir.</p>
+<p>També tindrem els mètodes <strong>getJSONObject(<em>index</em>)</strong>,
+<strong>getJSONArray(<em>index</em>)</strong>, <strong>getInt(<em>index</em>)</strong>, ..., que tornen directament el
+tipus especificat</p>
+<p>Posem el primer exemple sobre un json que només té un array els elements del
+qual són valors:</p>
+<p>[ 5 , 7 , 8 , 7 ]</p>
+<p>Observeu com ara l'arrel és un Array, i ens muntem un bucle per obtenir tots
+els elements. Copieu el següent codi en el fitxer
+<strong>Exemple_3_5_14_JSONAnalitzarArray.kt</strong></p>
+<pre><code>package exemples
+
+import org.json.JSONTokener
+import org.json.JSONArray
+
+fun main(args: Array&lt;String&gt;) {
+
+    val cadena = "[ 5 , 7 , 8 , 7 ]"
+
+    val arrel = JSONTokener(cadena).nextValue() as JSONArray
+
+    for (i in arrel)
+        println(i)
+}
+</code></pre>
+<p>Com veieu podem fer servir els bucles foreach, però lamentablement no podem
+obtenir directament un JsonObject, i per tant l'hem de reconvertir. Ho
+mostrarem en el següent exemple en el qual agafem tots els empleats de
+l'empresa, on <strong>Empresa.json</strong> és així:</p>
+<p>{ "empresa" :<br />
+{ "empleats":<br />
+[<br />
+{ "num":1, "nom": "Andreu", "departament": 10, "edat": 32, "sou": 1000.0} ,<br />
+{ "num":2, "nom": "Bernat", "departament": 20, "edat": 28, "sou": 1200.0} ,<br />
+{ "num":3, "nom": "Clàudia", "departament": 10, "edat": 26, "sou": 1100.0} ,<br />
+{ "num":4, "nom": "Damià", "departament": 10, "edat": 40, "sou": 1500.0}<br />
+]<br />
+}<br />
+}</p>
+<p>Tindrem un objecte arrel, amb només un objecte, <strong>empresa</strong> , que té un únic
+membre empleat que és un array amb 4 elements, cadascun dels empleats. Copieu
+el següent exemple en el fitxer kotlin
+<strong>Exemple_3_5_15_JSONAnalitzarEmpresa.kt</strong></p>
+<pre><code>package exemples
+
+import org.json.JSONTokener
+import org.json.JSONObject
+import java.io.FileReader
+
+fun main(args: Array&lt;String&gt;) {
+
+    val r_json = FileReader("Empresa.json")
+
+    val arrel = JSONTokener(r_json).nextValue() as JSONObject
+    val empresa = arrel.getJSONObject("empresa")
+
+    for (e in empresa.getJSONArray("empleats")){
+        val emp = e as JSONObject
+        println("" + emp.get("nom") + " (" + emp.get("sou") + ")")
+    }
+}
+</code></pre>
+<p>Mireu com ens hem estalviat un pas, i no hem definit la variable <strong>empleats</strong>
+, sinó que ho especifiquem en el bucle. També podríem haver estalviat la
+variable <strong>empresa</strong> si en el bucle haguérem posat :</p>
+<pre><code>for (e in arrel.getJSONObject("empresa").getJSONArray("empleats")){
+</code></pre>
+<p>Exemple més complet</p>
+<p>Mirem algun exemple ja més elaborat, on ens tocarà analitzar amb detall
+l'estructura json. Fem-lo sobre l'exemple de <strong>BICICAS</strong>. Podeu tornar a fer
+la consulta de l'estat actual en aquest moment a la pàgina
+<a href="http://gestiona.bicicas.es/apps/apps.php">http://gestiona.bicicas.es/apps/apps.php</a> , seleccionar-ho tot i guardar-lo
+en el fitxer <strong>Bicicas.json</strong>. És molt possible que tinguem problemes amb els
+caràcers especials, com les vocals accentuades, a causa de que el navegador
+utilitzat no les reconega, i en copiar-les al fitxer no tinguem ja la
+codificació correcta. No li donarem importància en aquest moment. Recordem ací
+l'estructura:</p>
+<p>[<br />
+{"ocupacion":<br />
+[ {"id":"01","punto":"UJI -
+FCHS","puestos":28,"ocupados":11,"latitud":"39.99533","longitud":"-0.06999",<br />
+"porcentajeAltaOcupacion":"80","porcentajeBajaOcupacion":"20"},<br />
+{"id":"02","punto":"ESTACIÓN DE FERROCARRIL Y
+AUTOBUSES","puestos":28,"ocupados":8,"latitud":"39.98765",<br />
+"longitud":"-0.05281","porcentajeAltaOcupacion":"80","porcentajeBajaOcupacion":"20"},<br />
+{"id":"03","punto":"PLAZA DE
+PESCADERÍA","puestos":28,"ocupados":13,"latitud":"39.98580","longitud":"-0.03798",<br />
+"porcentajeAltaOcupacion":"80","porcentajeBajaOcupacion":"20"},<br />
+...<br />
+]<br />
+}<br />
+]</p>
+<p>Com podem observar, comença per un <strong>array</strong> , no per un objecte, com sol ser
+habitual. L'únic que ens interessa és el <strong>primer element</strong> de l'array, ja que
+en posteriors anirien en tot cas missatges. El primer element és un
+<strong>objecte</strong> que té un únic membre <strong>ocupacion</strong> (o si en té més no ens
+interessen), que és un <strong>array</strong> amb totes les estacions. Cada estació és un
+objecte amb la informació que ens interessa.</p>
+<p>Copieu el següent codi en el fitxer Kotlin
+<strong>Exemple_3_5_16_JSONAnalitzarBicicas.kt</strong> :</p>
+<pre><code>package exemples
+
+import org.json.JSONTokener
+import org.json.JSONObject
+import org.json.JSONArray
+import java.io.FileReader
+
+fun main(args: Array&lt;String&gt;) {
+
+    val r_json = FileReader("Bicicas.json")
+
+    val arrel = JSONTokener(r_json).nextValue() as JSONArray
+
+    val estacions = arrel.getJSONObject(0).getJSONArray("ocupacion")
+
+    for (e in estacions){
+        val est = e as JSONObject
+        println("" + e.get("id") + ".- " + e.get("punto") + " (" + e.get("ocupados") + "/" + e.get("puestos") + ")")
+    }
+}
+</code></pre>
+<p>Hem agafat l'array, d'ell hem agafat el primer objecte i d'ell l'array. I hem
+utilitzat un bucle <strong>for</strong> , per a tots els valors de l'array</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 2.5</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../52_driver_orgjson/" class="btn btn-neutral float-left" title="52 driver orgjson"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../522__escriptura/" class="btn btn-neutral float-right" title="5.2.2 - Escriptura">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../52_driver_orgjson/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../522__escriptura/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
